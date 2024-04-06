@@ -36,7 +36,7 @@
   margin-block: 100px;
   padding-block-start: clamp(7.5rem, 6.3462rem + 4.9231cqi, 8.5rem);
   padding-block-end: 12px;
-  font-family: var(--accent-font, 'PressStart2P'), 'Fixedsys', sans-serif;
+  font-family: var(--accent-font, 'PressStart2P'), 'Papyrus', fantasy;
   border: 2px solid var(--accent-color, #000);
 }
 
@@ -180,7 +180,7 @@
   position: absolute;
   inset-block-start: 27px;
   inset-inline-end: 27px;
-  font-family: var(--accent-font, 'PressStart2P'), 'Fixedsys', sans-serif;
+  font-family: var(--accent-font, 'PressStart2P'), 'Papyrus', fantasy;
   font-size: 14px;
   mix-blend-mode: hard-light;
   text-shadow:
@@ -225,7 +225,7 @@
 
 .button {
   position: relative;
-  font-family: var(--accent-font, 'PressStart2P'), 'Fixedsys', sans-serif;
+  font-family: var(--accent-font, 'PressStart2P'), 'Papyrus', fantasy;
   background-color: var(--bg-color, #FFF);
   border: 2px solid var(--accent-color, #000);
   transition: box-shadow 0.3s ease;
@@ -363,7 +363,7 @@
  }
 
 .modal-text {
-  font-family: var(--accent-font, 'PressStart2P'), 'Fixedsys', sans-serif;
+  font-family: var(--accent-font, 'PressStart2P'), 'Papyrus', fantasy;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 1.5;
