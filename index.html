@@ -566,7 +566,7 @@
           class="button save-button" 
           type="button"
           onclick="window['modal'].showModal()"
-          aria-controls="modal-save"
+          aria-controls="modal"
           >
           <svg class="floppy-icon" width="100%" height="100%" viewBox="0 0 21 21">
             <use href="./svg/floppy.svg#floppy"></use>
@@ -580,11 +580,16 @@
             </svg>
             <p class="modal-text">вставьте<br>дискету, чтобы<br>продолжить</p>
           </div>
-          <button 
+          <!--<button 
             class="button modal-button" 
             type="button"
             onClick="window['modal'].close()">
-            <span class="button__text">OK</span></button>
+            <span class="button__text">OK</span></button>-->
+          <form  class="modal-form" method="dialog">
+            <button class="button modal-button">
+              <span class="button__text">OK</span>
+            </button>
+          </form>  
         </dialog>
       </section>
     </main>
