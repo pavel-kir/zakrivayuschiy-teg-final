@@ -4,3 +4,46 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+.page.theme-dark {
+  --bg-color: #000;
+  --accent-color: #00CC14;
+  --card-title-fw: 785;
+  --card-text-fw: 465;
+  --bg-image: 
+    repeating-linear-gradient(to bottom, #000 0 2px, rgb(0 0 0 / 0) 2px 4px),
+    repeating-linear-gradient(to right, #000 0 2px, rgb(0 0 0 / 0) 2px 4px),
+    linear-gradient(to bottom, #007f0c, #004306);
+  --contour-color: var(--accent-color);
+  --stroke-color: rgb(0 0 0 / 0.5);
+  --button-text-color: var(--accent-color, #00CC14);
+}
+
+.page.theme-light {
+  --bg-color: #FFF;
+  --accent-color: #000;
+  --card-title-fw: 700;
+  --card-text-fw: 400;
+  --bg-image: 
+    repeating-linear-gradient(to bottom, #d3d3d3 0 2px, rgb(211 211 211 / 0) 2px 4px),
+    repeating-linear-gradient(to right, #d3d3d3 0 2px, rgb(211 211 211 / 0) 2px 4px),
+    linear-gradient(to bottom, #e7e7e7, #e7e7e7 0.01%, #1a1a1a 100%);
+  --contour-color: var(--accent-color);
+  --stroke-color: rgb(255 255 255 / 0.5);
+  --button-text-color: var(--bg-color, #fff);
+}
+
+@media (prefers-color-scheme: dark) {
+  .page.theme-auto {
+    --bg-color: #000;
+    --accent-color: #00CC14;
+    --card-title-fw: 785;
+    --card-text-fw: 465;
+    --bg-image: 
+    repeating-linear-gradient(to bottom, #000 0 2px, rgb(0 0 0 / 0) 2px 4px),
+    repeating-linear-gradient(to right, #000 0 2px, rgb(0 0 0 / 0) 2px 4px),
+    linear-gradient(to bottom, #007f0c, #004306);
+    --contour-color: var(--accent-color);
+    --stroke-color: rgb(0 0 0 / 0.5);
+    --button-text-color: var(--accent-color, #00CC14);
+  }
+}
